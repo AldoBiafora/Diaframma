@@ -30,8 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files — le chiavi reali non vanno mai nel repo
+.env
+.env.local
+.env.*.local
+# Il file d'esempio (senza chiavi vere) è tracciato
+!.env.local.example
 
 # vercel
 .vercel
